@@ -1,0 +1,60 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "windows": {
+                "command": "cygwin",
+                "args": [
+                    "-c",
+                    "make"
+                ]
+            },
+            "linux": {
+                "command": "bash",
+                "args": [
+                    "-c",
+                    "make"
+                ]
+            },
+            "osx": {
+                "command": "bash",
+                "args": [
+                    "-c",
+                    "make"
+                ]
+            }
+        },
+  
+        {
+            "label": "clean",
+            "type": "shell",
+            "windows": {
+                "command": "cygwin",
+                "args": [
+                    // "-c",
+                    "clean"
+                ]
+            },
+            "linux": {
+                "command": "bash",
+                "args": [
+                    "-c",
+                    "'make clean'"
+                ]
+            },
+            "osx": {
+                "command": "bash",
+                "args": [
+                    "-c",
+                    "'make clean'"
+                ]
+            }
+        }
+    ]
+}

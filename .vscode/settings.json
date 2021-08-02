@@ -1,0 +1,22 @@
+{
+    "terminal.integrated.defaultProfile.windows": "Cygwin",
+    // Use this to keep bash from doing a 'cd ${HOME}'
+  "terminal.integrated.env.windows": {
+    "CHERE_INVOKING": "1"
+  },
+  // Make it a login shell //Deprecated
+//   "terminal.integrated.shellArgs.windows": [
+//     "-l"
+// ],
+"terminal.integrated.profiles.windows": {
+
+    
+    "Cygwin": {
+        "path": "C:\\cygwin64\\bin\\bash.exe",
+        "args": [
+            "--login",
+        ]
+    }
+}
+
+}
