@@ -8,10 +8,15 @@
 
 
 
-
-std::string Color::prefix =    "\033[";             //\e, \E, \33, \033, \x1b
+std::string Color::esc = "\033";              //\e, \E, \33, \033, \x1b
+std::string Color::prefix =    Color::esc + "[";
 std::string Color::suffix = "m";
 
+//========================== setting esc =============================
+// \e, \E, \33, \033, \x1b
+void Color::setEsc(std::string e){
+        Color::esc = e;
+    }
 
 
 //========================== basic colors ============================

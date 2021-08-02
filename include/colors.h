@@ -4,10 +4,12 @@
 #include <string>
 
 class Color{
-public:
+private:
+    static std::string esc;
     static std::string prefix;
     static std::string suffix;
-
+public:
+    static void setEsc(std::string e);
     static std::string base(int val);
     static std::string fgbit8(int val);
     static std::string bgbit8(int val);
