@@ -16,6 +16,7 @@ std::string Color::suffix = "m";
 // \e, \E, \33, \033, \x1b
 void Color::setEsc(std::string e){
         Color::esc = e;
+        Color::prefix =    Color::esc + "[";
     }
 
 
