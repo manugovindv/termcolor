@@ -58,7 +58,7 @@ main.o: $(SRC)\main.cpp colors.o
 	$(CC) $(CFLAGS) -I$(INCLUDE) -c $(SRC)\main.cpp -o $(OBJECT)\main.o
 
 clean:
-	cmd /C "del /q /f $(OUTPUT)\* $(OBJECT)\*.o"
+	cmd /C "del /q /f $(OBJECT)\*.o"
 
 run: all
 	$(OUTPUTMAIN)
